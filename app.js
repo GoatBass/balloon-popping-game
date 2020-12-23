@@ -53,11 +53,13 @@ function inflateBallons(globo){
 globos.forEach(singleBallon)
 
 function singleBallon(globo){
-        globo.addEventListener('dblclick', function(){
-        globo.textContent = ''
-        globo.style.backgroundColor = ''
-        contador = contador + 1
-        printContador.innerHTML = contador
-        globo.addEventListener('mouseover', petarGlobo)
+    globo.addEventListener('dblclick', function(){
+        if(contador < 24){
+            globo.textContent = ''
+            globo.style.backgroundColor = ''
+            contador = contador + 1
+            printContador.innerHTML = contador
+            globo.addEventListener('mouseover', petarGlobo)
+        }
     })
 }
