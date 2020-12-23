@@ -13,7 +13,21 @@ body{
     color:#3f7abe;
 }
 
-h1{
+.btn-reset {
+    background-color: #3f7abe;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+}
+
+h1, h2{
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
